@@ -6,15 +6,15 @@ window.onload = function(){
     src: ['assets/regular.ogg']
   });
 
-  var first = true
+  var firstThree = 0
   var wasGolden = false
   
   var body = document.querySelector('#main');
   body.addEventListener("click", function(evt){
-    const random = Math.round(Math.random() * 10);
+    const random = Math.round(Math.random() * 100);
     var golden = false;
 
-    if (random > 7) {
+    if (random >= 75) {
       golden = true;
     }
 
@@ -43,9 +43,9 @@ window.onload = function(){
       console.log('Regular (' + random.toString() + ')')
     }
 
-    if (first) {
+    if (firstThree < 3) {
         useRegular()
-        first = false
+        firstThree++
     } else if (wasGolden) {
         useRegular()
     } else if (golden) {
