@@ -5,13 +5,6 @@ window.onload = function(){
   var sound2 = new Howl({
     src: ['assets/regular.ogg']
   });
-
-  const random = Math.random() * (5 - 1) + 1;
-  var golden = false;
-
-  if (random === 5) {
-    golden = true;
-  }
   
   var body = document.querySelector('#main');
   body.addEventListener("click", function(evt){
