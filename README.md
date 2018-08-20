@@ -1,1 +1,1 @@
-Repo for [Try one!](https://yuube.github.io/beetleberries/)
+Repo for [Beetleberries, my favorite!](https://yuube.github.io/beetleberries/)
